@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Semi_Bloc_Note" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bRL-Nn-b8p">
+                                <rect key="frame" x="45" y="104" width="274" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YsP-EJ-EFU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSB-1e-Mpm">
+                                <rect key="frame" x="344" y="101" width="35" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="cSL-Pu-tgR"/>
+                                    <constraint firstAttribute="width" constant="35" id="fUn-44-YcD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" image="plus" catalog="system"/>
+                                <connections>
+                                    <action selector="onTouchedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aaj-OZ-G0Q"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LMg-ZH-kbm">
+                                <rect key="frame" x="45" y="181" width="324" height="232"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="232" id="Dag-Sp-vZL"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A84-j9-Cou">
+                                <rect key="frame" x="192" y="826.33333333333337" width="30" height="35.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="DEX-KE-SPQ"/>
+                                    <constraint firstAttribute="width" constant="30" id="LP9-RW-UP8"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="trash" catalog="system">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetTextView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D8o-ue-ivs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LMg-ZH-kbm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="5UM-7w-Pag"/>
+                            <constraint firstItem="aSB-1e-Mpm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="73i-s7-1hI"/>
+                            <constraint firstItem="bRL-Nn-b8p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="9JI-jn-gwM"/>
+                            <constraint firstAttribute="bottom" secondItem="A84-j9-Cou" secondAttribute="bottom" constant="34" id="I0D-LI-pCk"/>
+                            <constraint firstItem="bRL-Nn-b8p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="S33-8H-lON"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LMg-ZH-kbm" secondAttribute="trailing" constant="45" id="X9Q-P0-4qQ"/>
+                            <constraint firstItem="aSB-1e-Mpm" firstAttribute="leading" secondItem="bRL-Nn-b8p" secondAttribute="trailing" constant="25" id="b9d-JM-D2h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aSB-1e-Mpm" secondAttribute="trailing" constant="35" id="c8P-uC-lfq"/>
+                            <constraint firstItem="LMg-ZH-kbm" firstAttribute="top" secondItem="aSB-1e-Mpm" secondAttribute="bottom" constant="40" id="cpv-u0-W7W"/>
+                            <constraint firstItem="A84-j9-Cou" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kAb-mQ-fE4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputText" destination="bRL-Nn-b8p" id="tVv-hl-qQQ"/>
+                        <outlet property="textView" destination="LMg-ZH-kbm" id="aqM-Gl-4ZB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="64" height="56"/>
+        <image name="trash" catalog="system" width="60" height="64"/>
+    </resources>
+</document>
